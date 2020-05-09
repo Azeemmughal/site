@@ -12,9 +12,19 @@ ul{
   list-style-type: none;
   margin-top: 35px;
 }
-ul li{
+.nav li{
   display: inline-block;
 }
+
+.form ul li{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px;
+  margin: 8px 0;
+  border-bottom: 2px solid #fc7e2f;
+}
+
 ul li a{
   text-decoration: none;
   font-size: 20px;
@@ -37,17 +47,31 @@ ul li a:hover{
   max-width: 1300px;
   height: auto;
 }
-.title{
+.title-home{
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+.title-home h1{
+  font-family: 'Montserrat', sans-serif;
+  color: #fc7e2f;
+  font-size: 80px;
+}
+
+.title{
+  position: absolute;
+  top: 20%;
   left: 50%;
   transform:translate(-50%,-50%);
 }
 .title h1{
   font-family: 'Montserrat', sans-serif;
   color: #fc7e2f;
-  font-size: 80px;
+  font-size: 70px;
+  border-bottom: 6px solid white;
 }
+
 .button{
   position: absolute;
   top: 65%;
@@ -64,4 +88,34 @@ ul li a:hover{
   background-color: white;
   color: black;
   transition: 0.6s ease;
+}
+.form{
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform:translate(-50%,-40%);
+}
+.form input{
+  border:none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 150px;
+  float: left;
+  margin: 10px;
+}
+.form .btn{
+  width: 100%;
+  background: none;
+  border: 2px solid  #fc7e2f;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  margin: 12px 0px;
+}
+.form .btn:hover{
+  background-color: #fcf8e8;
+  color: black;
+  transition: 0.6 ease;
 }
